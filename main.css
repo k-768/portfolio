@@ -1,0 +1,125 @@
+html {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    font-family: 'DotGothic16', sans-serif;
+    --colorA: #222831;
+    --colorB: #393E46;
+    --colorC: #00ADB5;
+    --colorD: #EEEEEE;
+  }
+  
+  body {
+    color: var(--colorD);
+    background-color: var(--colorA);
+    line-height: 1.5;
+    word-wrap: break-word;
+    box-sizing: border-box;
+    max-width: 980px;
+    margin: 2em auto;
+    padding: 0px 30px;
+  }
+  
+  h1 {
+  position: relative;
+  display: block;
+  margin-bottom: 1em;
+  text-align: center; /* 中央ぞろえを追加 */
+}
+
+h1:before {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  display: inline-block;
+  width: 60px;
+  height: 5px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  background-color: var(--colorC);
+  border-radius: 2px;
+}
+h2 {
+  /*線の種類（実線） 太さ 色*/
+  border-bottom: solid 3px var(--colorD);
+  text-align: center;
+}
+
+img {
+  
+  border-radius: 20px;
+  width: 50%;
+  display: inline-block;
+}
+
+.box{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.archive {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.archive div {
+  margin-bottom: 3rem;
+  padding: 2rem;
+  width: 40%;
+  background-color: var(--colorB);
+  border-radius: 20px;
+}
+
+.archive img {
+  display: block;
+  margin-bottom: 1rem;
+  width: 100%;
+  height: auto;
+  border-radius: 0px;
+}
+
+.language {
+  color: var(--colorB);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.language div {
+  margin-bottom: 3rem;
+  padding: 2rem;
+  width: 40%;
+  background-color: var(--colorD);
+  border-radius: 20px;
+}
+
+.language img {
+  display: inline-block;
+  margin-bottom: 1rem;
+  width: 30%;
+  height: auto;
+  border-radius: 0px;
+}
+.language p{
+  display: inline-block;
+  vertical-align: top;
+  
+}
+@media only screen and (max-width: 750px) {
+  .archive div {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    width: 90%;
+  }
+  .language div {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    width: 90%;
+  }
+  .language img {
+    display: block;
+  }
+}
